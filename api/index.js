@@ -1,6 +1,6 @@
 const server =require("./src/app");
-//const {conn} =require("./src/db");
-const {conn} =require("./src/models/index");
+const {conn} =require("./src/db");
+//const {conn} =require("./src/models/index");
 
 const { PORT } = require("./src/utils/config/index");
 
