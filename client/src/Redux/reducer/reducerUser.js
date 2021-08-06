@@ -1,7 +1,4 @@
-import {
-  GET_USERS,
-
-} from "../actions/actionsUser";
+import { GET_USERS } from "../actions/actionsUser";
 
 const initialStateUsers = {
   allUsers: [],
@@ -12,8 +9,9 @@ const usersReducer = (state = initialStateUsers, action) => {
     case GET_USERS:
       return {
         ...state,
-        allGists: action.payload,
+        allUsers: action.payload,
       };
+   
     default:
       return state;
   }
